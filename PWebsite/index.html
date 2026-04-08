@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" class="logo"><span> ENG</span>Joud</a>
+        <ul class="links">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Skills</a></li>
+           <li><a href="#">Projects</a></li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-links">
+    <a href="https://www.linkedin.com/in/joud-alshammri-7443a227b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i>
+    <a href="https://github.com/joudSE"><i class="fa-brands fa-github"></i>
+    <a href="#"><i class="fa-light fa-circle-envelope"></i>
+</div>  
+<i id="btnMenu" class="fa-solid fa-bars"></i>
+    </nav>
+
+
+
+
+</header>
+
+<div class="hero-sec">
+    <div class="container">
+     
+        <div class="div-text">
+              <h1>Joud Alshammari</h1>
+              <span>software Engineer | Ai Enthusiast</span>
+              <p>Passionate about Artificial Intelligence and crafting meaningful digital experiences</p>
+              <a href="#" class="btn">My Works</a>
+              
+
+
+        </div>
+
+        <div class="div-img">
+            <img src="sticker.webp" alt=" My Sticker">
+        </div>
+    </div>
+</div>
+<script>
+    let btnMenu= document.getElementById("btnMenu");
+    let NavLinks= document.querySelector(".links");
+
+    btnMenu.onclick = function(){
+        btnMenu.classList.toggle("fa-times")
+        NavLinks.classList.toggle("active")
+    }
+</script>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Software Engineering graduate with a strong interest in Artificial Intelligence and Natural Language Processing (NLP). I enjoy building practical solutions that simplify complex information and make it more useful and accessible for users.
+
+One of my key projects is NuktaAi, an AI-powered tool designed to summarize articles and highlight the most important points, helping users save time and focus on what matters.
+
+I am currently developing my skills in Python and AI technologies, and I am seeking opportunities where I can apply my knowledge, grow professionally, and contribute to impactful real-world projects
+        </p>
+    </section>
+
+    
+    <section id="skills" class="skills-sec">
+    <h2 class="section-title">My Skills</h2>
+    
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>💻 Technical Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>APIs Integration</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>🤖 AI & NLP</h3>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Natural Language Processing</li>
+                <li>Text Summarization</li>
+                <li>Machine Learning</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>🛠 Tools</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>Google Colab</li>
+                <li>Chrome Extensions</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>🧠 Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Fast Learning</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    
+     <section id="projects" class="projects-sec">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+        
+        <div class="project-card">
+            <div class="project-info">
+                <h3>✨ NuktaAi</h3>
+                <p>AI-powered Chrome extension that summarizes articles automatically and highlights key points to improve reading efficiency.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>NLP</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>💻 Personal Portfolio</h3>
+                <p>A clean and modern website designed to showcase my skills and technical projects with a seamless user experience.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+    <section id="experience" class="experience-sec">
+    <h2 class="section-title">Experience & Training</h2>
+    <div class="experience-container">
+
+        <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+                <h3>🎓 Fresh Graduate</h3>
+                <span class="exp-date">2020 - 2025</span>
+                <p><strong>Bachelor’s degree in Software Engineering.</strong> Focused on real-world problem solving and developing a strong foundation in software architecture.</p>
+                <ul class="exp-bullets">
+                    <li>Specialized interest in AI and Natural Language Processing.</li>
+                    <li>Maintained high academic standards while building technical skills.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+                <h3>🚀 Self-Learning & Independent Projects</h3>
+                <span class="exp-date">2025 - Present</span>
+                <p>Continuously advancing expertise in Python and AI through hands-on practice and building real-world solutions.</p>
+                <ul class="exp-bullets">
+                     <li>Strengthened problem-solving skills through consistent coding practice.</li>
+                    <li>Learning to integrate APIs and manage code via Git & GitHub.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xwvvwzea" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send</button>
+</form>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
