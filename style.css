@@ -252,14 +252,14 @@ header nav .links.active {
         position: static !important; 
         display: flex !important;
         justify-content: center !important;
-        margin-top: 20px !important;
+        padding: 0 !important; 
     }
 
     .hero-sec .container .div-img img {
-        width: 250px !important;
+        width: 70% !important;
         height: auto !important;
-        position: static !important;
-        transform: none !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
     }
 }
 
