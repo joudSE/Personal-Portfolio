@@ -156,14 +156,54 @@ width:100%;
     display: none;
 }
 
+@media (max-width: 980px) {
+    
+    header nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 15px !important;
+    }
 
-.hero-sec .container {
+    header nav .links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+        z-index: 1000;
+        display: flex;
+    }
+
+    header nav .links.active {
+        right: 0;
+    }
+
+    #btnMenu {
+        display: block !important;
+        color: #ff69b4;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+        order: 3; 
+    }
+
+    
+    .hero-sec {
+        margin-top: 80px !important; 
+    }
+
+    .hero-sec .container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
         width: 100% !important;
-        padding: 0 10px !important;
+        padding: 0 20px !important;
     }
 
     .hero-sec .container .div-text {
@@ -176,23 +216,38 @@ width:100%;
     }
 
     .hero-sec .container .div-text h1 {
-        font-size: 1.6rem !important; 
+        font-size: 1.7rem !important;
         white-space: normal !important;
         display: block !important;
         width: 100% !important;
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
     }
 
+    .hero-sec .container .div-text span {
+        display: block !important;
+        width: 100% !important;
+        white-space: normal !important;
+        font-size: 1.1rem !important;
+        line-height: 1.4 !important;
+        color: #ffb6c1; 
+    }
+
+    
     .hero-sec .container .div-img {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
-        margin-top: 20px !important;
+        margin-top: 30px !important;
     }
 
     .hero-sec .container .div-img img {
-        width: 200px !important; 
+        width: 220px !important; 
         height: auto !important;
+        display: block !important;
     }
+}
+
 
 
 .projects-sec {
