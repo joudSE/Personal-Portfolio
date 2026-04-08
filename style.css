@@ -157,12 +157,78 @@ width:100%;
 }
 
 @media (max-width: 980px) {
+    /* 1. تنسيق الهيدر العلوي لضمان ظهور كل شيء */
+    header nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 15px !important;
+        width: 100% !important;
+        background: #fff; /* أو لون خلفية موقعك */
+    }
+
+    /* 2. إخفاء روابط الهوم والأباوت (عشان تظهر داخل المنيو بس) */
+    header nav .links {
+        display: none !important; /* هذا السطر اللي بيرجع لك الثلاث خطوط */
+    }
+
+    /* 3. إظهار الثلاث خطوط وتلوينها */
+    #btnMenu {
+        display: block !important;
+        color: #ff69b4 !important; /* اللون الوردي */
+        font-size: 28px !important;
+        cursor: pointer !important;
+        order: 3 !important; /* يخليه أقصى اليمين */
+    }
+
+    /* 4. إظهار أيقونات لينكد إن وقيت هب في النص */
+    header nav .icons {
+        display: flex !important;
+        gap: 10px !important;
+        order: 2 !important;
+    }
+
+    /* 5. تنسيق المحتوى الرئيسي (التوسيط) */
+    .hero-sec {
+        margin-top: 100px !important; /* مساحة كافية تحت الهيدر */
+    }
+
+    .hero-sec .container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .hero-sec .container .div-text h1 {
+        font-size: 1.6rem !important;
+        white-space: normal !important;
+        width: 100% !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-sec .container .div-text span {
+        display: block !important;
+        width: 100% !important;
+        white-space: normal !important;
+        font-size: 1rem !important;
+    }
+
+    /* 6. ضبط مقاس الصورة المنقذ */
+    .hero-sec .container .div-img img {
+        width: 200px !important;
+        height: auto !important;
+        margin-top: 20px !important;
+    }
+}@media (max-width: 980px) {
     
     header nav {
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
         padding: 10px 15px !important;
+        width: 100% !important;
+        background: #fff;
     }
 
     header nav .links {
