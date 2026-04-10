@@ -157,40 +157,40 @@ width:100%;
 }
 
 @media (max-width: 980px) {
-    /* 1. تنسيق الهيدر العلوي لضمان ظهور كل شيء */
+    
     header nav {
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
         padding: 10px 15px !important;
         width: 100% !important;
-        background: #fff; /* أو لون خلفية موقعك */
+        background: #fff; 
     }
 
-    /* 2. إخفاء روابط الهوم والأباوت (عشان تظهر داخل المنيو بس) */
+    
     header nav .links {
-        display: none !important; /* هذا السطر اللي بيرجع لك الثلاث خطوط */
+        display: none !important; 
     }
 
-    /* 3. إظهار الثلاث خطوط وتلوينها */
+    
     #btnMenu {
         display: block !important;
-        color: #ff69b4 !important; /* اللون الوردي */
+        color: #ff69b4 !important; 
         font-size: 28px !important;
         cursor: pointer !important;
-        order: 3 !important; /* يخليه أقصى اليمين */
+        order: 3 !important; 
     }
 
-    /* 4. إظهار أيقونات لينكد إن وقيت هب في النص */
+    
     header nav .icons {
         display: flex !important;
         gap: 10px !important;
         order: 2 !important;
     }
 
-    /* 5. تنسيق المحتوى الرئيسي (التوسيط) */
+    
     .hero-sec {
-        margin-top: 100px !important; /* مساحة كافية تحت الهيدر */
+        margin-top: 100px !important; 
     }
 
     .hero-sec .container {
@@ -214,7 +214,7 @@ width:100%;
         font-size: 1rem !important;
     }
 
-    /* 6. ضبط مقاس الصورة المنقذ */
+    
     .hero-sec .container .div-img img {
         width: 200px !important;
         height: auto !important;
@@ -313,7 +313,23 @@ width:100%;
         display: block !important;
     }
 }
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #ff69b4; 
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
 
+.project-link:hover {
+    background-color: #e0559d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
 
 
 .projects-sec {
@@ -512,7 +528,7 @@ nav ul li a:hover {
     color: #ff69b4;
 }
 
-/* Sections */
+
 section {
     padding: 25px;
     margin: 20px;
@@ -521,7 +537,7 @@ section {
     border: 1px solid #ffe4ec;
 }
 
-/* Titles */
+
 h2 {
     color: #ff69b4;
 }
@@ -533,7 +549,7 @@ h2 {
     margin-right: auto;
     transform: none !important;
  }
-/* Projects */
+
 .project {
     background: #fff0f5;
     padding: 15px;
@@ -541,7 +557,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Form */
+
 form input, form textarea {
     width: 100%;
     padding: 12px;
@@ -562,7 +578,7 @@ button:hover {
     background: #ff1493;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     background: #ffc0cb;
