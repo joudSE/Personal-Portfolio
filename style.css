@@ -220,7 +220,8 @@ width:100%;
         height: auto !important;
         margin-top: 20px !important;
     }
-}@media (max-width: 980px) {
+}
+    @media (max-width: 980px) {
     
     header nav {
         display: flex !important;
@@ -250,13 +251,13 @@ width:100%;
     }
 
     #btnMenu {
-        display: block !important;
-        color: #ff69b4;
-        font-size: 28px;
-        cursor: pointer;
-        z-index: 1001;
-        order: 3; 
-    }
+    display: block !important;
+    color: #ff69b4 !important;
+    font-size: 32px !important; 
+    cursor: pointer !important;
+    z-index: 1001 !important; 
+    order: 1 !important; 
+}
 
     
     .hero-sec {
@@ -268,8 +269,10 @@ width:100%;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        width: 100% !important;
+        width: 90% !important;
         padding: 0 20px !important;
+        border-radius: 15px;
+        margin: 0 auto !important;
     }
 
     .hero-sec .container .div-text {
